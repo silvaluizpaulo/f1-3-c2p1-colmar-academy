@@ -1,0 +1,421 @@
+/* Header */
+html {
+  font-size: 15px;
+}
+
+body {
+  color: #4A4A4A;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  align-items: center;
+  display: flex;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  top: 0;
+}
+
+header .logo {
+  color: #9B9B9B;
+  flex-grow: 1;
+  margin-left: 24px;
+  height: 32px;
+  font-size: 18px;
+}
+
+
+header .logo .colmar {
+  color: #4B4B4B;
+  font-weight: bold;
+}
+
+header .logo .mobile,
+#information .news .item .mobile,
+#learning .mobile {
+  display: none;
+}
+
+header nav {
+  height: 64px;
+  margin-right: 16px;
+}
+
+header nav span {
+  height: 100%;
+}
+
+header nav span a,
+header nav span a:visited {
+  color: #4E4E4E;
+  height: 100%;
+  padding: 0 8px;
+  text-decoration: none;
+}
+
+header nav span a:hover,
+header nav span a:active {
+  background-color: #F3F5F5;
+}
+
+.main {
+  margin-top: 64px;
+}
+
+#mainbox {
+  background-color: #D8D8D8;
+  padding: 32px 0 32px 24px;
+}
+
+#mainbox .banner {
+  width: 60%;
+}
+
+#mainbox .banner img,
+#information .highlight img {
+  width: 100%;
+}
+
+#mainbox .content {
+  margin-left: 24px;
+  width: 40%;
+}
+
+#mainbox .content .title {
+  font-size: 3em;
+  font-weight: bold;
+  width: 75%;
+}
+
+#mainbox .content .text {
+  font-size: 1.8rem;
+  margin: 30px 0;
+  width: 70%;
+}
+
+#mainbox .content button {
+  background-color: #4A4A4A;
+  color: #FFF;
+  font-size: 15px;
+  padding: 8px 8rem;
+}
+
+#information {
+  align-items: flex-start;
+  background-color: #F3F5F5;
+  padding: 32px 0 32px 24px;
+}
+
+#information .highlight {
+  border-right: 1px solid #D8D8D8;
+  padding-right: 24px;
+  width: 60%;
+}
+
+#information .highlight .info {
+  margin-top: 32px;
+}
+
+#information .highlight .info .title {
+  color: inherit;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#information .highlight .info .text {
+  color: #848484;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin: 24px 0;
+}
+
+#information .highlight .info .author {
+  font-weight: bold;
+}
+
+#information .news {
+  width: 40%;
+}
+
+#information .news .item {
+  border-bottom: 1px solid #D8D8D8;
+  padding: 16px;
+}
+
+#information .news .item:first-child {
+  padding-top: 0;
+}
+
+#information .news .item:last-child{
+  background-color: #D8D8D8;
+}
+
+#information .news .item img {
+  height: auto;
+  width: 35%
+}
+
+#information .news .item .desc {
+  margin-left: 16px;
+  width: 65%;
+}
+
+#information .news .item .title {
+  margin: 0;
+}
+
+#information .news .item p,
+#learning .cards .card .info p,
+#thesis .news .item p {
+  color: #848484;
+  line-height: 1.3em;
+  margin: 8px 0 0;
+}
+
+#information .news .desc a,
+#information .news .desc a:hover,
+#information .news .desc a:visited,
+#information .news .desc a:active {
+  color: #5E9CE2;
+  text-decoration: none;
+}
+
+#learning {
+  background-color: #EAEBEC;
+  padding: 32px 56px 16px;
+}
+
+#learning h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  width: 100%
+}
+
+#learning .cards {
+  display: inline-block;
+}
+
+#learning .cards .card {
+  background-color: #FFF;
+  float: left;
+  margin: 16px;
+  max-width: 30%;
+  min-height: 350px;
+}
+
+#learning .cards .card img {
+  height: auto;
+  width: 100%;
+}
+
+#learning .cards .card .info {
+  padding: 16px 16px 24px;
+}
+
+#learning .cards .card .info .title {
+  margin: 0;
+}
+
+#thesis {
+  background-color: #F3F5F5;
+  padding: 32px 0 32px 24px;
+}
+
+#thesis h1 {
+  margin: 0;
+  text-align: center;
+}
+
+#thesis .content {
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+#thesis .video {
+  padding-right: 24px;
+  width: 60%;
+}
+
+#thesis .news {
+  width: 40%;
+}
+
+#thesis .news .item {
+  padding: 16px;
+}
+
+#thesis .news .item:first-child {
+  background-color: #D8D8D8;
+}
+
+#thesis .news .item img {
+  height: auto;
+  width: 35%
+}
+
+#thesis .news .item .desc {
+  margin-left: 16px;
+  width: 65%;
+}
+
+#thesis .news .item .title {
+  margin: 0;
+}
+
+footer {
+  background-color: #F3F5F5;
+  border-top: 1px solid #D8D8D8;
+  font-size: 0.9rem;
+  padding: 16px 24px 48px;
+}
+
+footer .copyright {
+  float: left;
+}
+
+footer .terms-privacy {
+  float: right;
+}
+
+footer .terms-privacy span {
+  margin-left: 16px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  header .logo {
+    margin: 0;
+  }
+
+  header .logo span,
+  header nav,
+  #information .highlight,
+  #information .news .desktop,
+  #learning .cards,
+  #thesis .news,
+  #thesis .video .info,
+  footer .terms-privacy {
+    display: none !important;
+  }
+
+  header .logo .mobile,
+  #information .news .item .mobile,
+  #learning .mobile {
+    display: block;
+  }
+
+  header .logo img {
+    margin: auto;
+  }
+
+  #mainbox {
+    padding: 0;
+    display: block !important;
+  }
+
+  #mainbox .banner,
+  #information .news,
+  #information .news .item img {
+    width: 100%;
+  }
+
+  #mainbox .content {
+    margin: 0;
+    padding: 32px 16px;
+    width: 100%;
+  }
+
+  #mainbox .content .title {
+    font-size: 2.5em;
+    width: 100%;
+  }
+
+  #mainbox .content .text {
+    font-size: 1.5em;
+    margin: 32px 0 24px;
+    width: 100%;
+  }
+
+  #mainbox .content button {
+    background-color: #9B9B9B;
+    padding: 8px 9rem;
+  }
+
+  #information {
+    padding: 16px 16px 0;
+  }
+
+
+  #information .news .item {
+    border: none;
+    display: block !important;
+    padding: 32px 0;
+  }
+
+  #information .news .item:last-child {
+    background-color: #F3F5F5;
+  }
+
+  #information .news .item .desc {
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  #learning {
+    border-top: 1px solid #D8D8D8;
+    background-color: #F3F5F5;
+    padding: 32px 16px;
+  }
+
+  #learning .mobile ul {
+    display: grid;
+    list-style-type: none;
+    margin: 16px 0 0 ;
+    padding: 0;
+  }
+
+  #learning .mobile ul li {
+    background-color: #D8D8D8;
+    font-size: 1.5rem;
+    padding: 16px;
+    margin: 4px 0;
+  }
+
+  #learning .mobile ul li:first-child {
+    margin-top: 0;
+  }
+
+  #learning .mobile ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  #thesis {
+    border-top: 1px solid #D8D8D8;
+    padding: 32px 0 24px;
+  }
+
+  #thesis .content {
+    margin-top: 16px;
+  }
+
+  #thesis .video {
+    padding: 0;
+    width: 100%;
+  }
+
+  footer {
+    padding: 16px;
+  }
+
+  footer .copyright {
+    float: none;
+  }
+}
